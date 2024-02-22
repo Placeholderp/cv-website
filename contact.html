@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navigation">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a class="active" href="">Contact Me</a>
+
+    </div>
+    <div class="contact-me">
+        <h1>Contact me</h1>
+        <form name="contact-form" action="/action_page.php" onsubmit="return validateForm()">
+            <div class="fname">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+            <div class="phone">
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Your phone number..">
+            </div>
+            <div class="email"> 
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter email..">
+            </div>
+            <div class="confirm-email">
+                <label for="confirm-email">Confirm Email</label><br>
+                <input type="confirm-email" name="confirm-email"id="confirm-email "placeholder="Enter email..">
+            </div>
+            <div class="project-description">
+                <label for="project-description">Project description</label><br>
+                <textarea id="project-description" name="project-description" placeholder="Write a description of the project you need done.." ></textarea>
+            </div>
+            <div class="project-date">
+                <label for="project-date">Project Date</label><br>
+                <input type="date" id="project-date" name="project-date">
+            </div>
+            <div class="project-duration">
+                <label for="project-duration">Project Duration</label><br>
+                <input type="range" min="1" max="30" value="5" id="project-duration">
+            <p><span id="output">5 days</span></p>
+            </div>
+            <div class="contact-method">
+                <label for="contact-method">Contact Method</label><br>
+                <select id="contact-method" name="contact-method">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                </select>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit" name="submit">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <ul>
+            <h3>Social Accounts</h3>
+        <li><a href="https://www.linkedin.com/in/oliverblatchford/"><img class="icon" src="images/linkedin.png" alt="LinkedIn logo"></a></li>
+        <li><a href="https://github.com/Placeholderp"><img class="icon" src="images/github-sign.png" alt="Github logo"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
