@@ -1,0 +1,112 @@
+/*Sets the default margin, padding and font to 0px on all elements.*/
+*{margin:0px; padding:0px; font-family: Arial, Helvetica, sans-serif;}
+
+/*Sets default text align to center, text color to white and background colour to blue on all pages*/
+html {text-align: center; color: white; background-color: rgb(15, 15, 86);}
+
+/*Underlines h3 headings*/
+h3 {text-decoration: underline;}
+
+/*Sets the form contact me to have columns*/
+.contact-me {display: flex; flex-direction: column; }
+
+/*sets all divs on index and portfolio pages to have padding and a solid white border*/
+.mainHeader, .contact, .education, .workExperience, .skills,.programminglanguages, .interests, .portfolio1, .portfolio2, .portfolio3, .contact-me{padding:5px; padding-top: 20px; padding-bottom: 20px; border: 5px solid white;}
+
+/*sets all divs on contact page to have padding, black text and white background*/
+.fname, .phone, .email, .confirm-email, .project-description, .project-date, .project-duration, .contact-method, .phone, .email,.confirm-email, .project-description, .project-date, .project-duration, .contact-method, .submit {padding:5px; padding-top: 20px; padding-bottom: 20px; background-color:rgb(255, 255, 255);color: black; }
+
+/*Stops text overflow when area is too small, set nav bar colour to white*/
+.navigation {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+/*Sets navigation bar to appear on the left, with black text, with padding to space out the elements*/
+.navigation a {   
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/*When mouse hovers a navigation bar option to grey background colour and black text*/
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+/*The current page navigation bar option is dark blue to show the user they are on that page*/
+.navigation a.active { 
+  background-color: rgb(53, 35, 171);
+  color:white;
+
+}
+
+/*makes text area scalable to page size and stops the user from resizing it*/
+textarea {  width: 40vw; /* 80% of viewport width */height: 25vh; /* 50% of viewport height */resize: none; /*stops resizing */}
+
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color:#000000;
+}
+
+/* Displays the icons in the footer left to right with a margin to seperate them*/
+footer ul li {
+  display: inline-block; 
+  margin: 0 10px; 
+}
+
+/*Sets width of the icons and height is auto to keep quality of image and aspect ratio*/
+.icon {
+  width: 50px; 
+  height: auto; 
+}
+
+/*Same as above*/
+.pimage {
+  width: 40vw;
+  height: auto;
+}
+
+/*Makes more padding of the form on the contact page between the edge of the page*/
+.contact-me {padding:15vw;padding-top:2vw; padding-bottom: 5vw;}
+
+/*Makes an adjustable size button which gets a pointer cursor when hovered over*/
+.portfolio-page button {
+  width: 40vw;
+  height:auto;
+  cursor: pointer;
+  background-color:rgb(255, 255, 255);
+}
+
+/*aligns text center*/
+.styles {text-align: center;}
+
+/*sets programming languages to be a column and align the items in the center horizontally*/
+.programminglanguages {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+/*puts the title div above the other elements */
+.title {
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+/*puts languages in a row that can wrap around each other and centers the elements horizontally*/
+.languages {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+
+
